@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraftforge.registries.*;
-import net.musicman.tutorialmod.item.ModItems;
+import net.musicman.tutorialmod.Item.ModItems;
 import net.musicman.tutorialmod.TutorialMod;
 
 import java.util.function.Supplier;
