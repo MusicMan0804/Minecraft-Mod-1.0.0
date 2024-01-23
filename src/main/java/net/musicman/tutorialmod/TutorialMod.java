@@ -14,7 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.musicman.tutorialmod.Block.ModBlocks;
-import net.musicman.tutorialmod.Item.ModItems;
+import net.musicman.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -30,6 +30,7 @@ public TutorialMod()
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register((modEventBus));
 
         modEventBus.register(modEventBus);
         // Register the commonSetup method for modloading
@@ -61,12 +62,13 @@ public TutorialMod()
             event.accept(ModItems.CHALCEDONY);
             event.accept(ModItems.JASPER);
         }
-        if (event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.RUBY_BLOCK);
             event.accept(ModBlocks.JADE_BLOCK);
             event.accept(ModBlocks.CHALCEDONY_BLOCK);
             event.accept(ModBlocks.JASPER_BLOCK);
         }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

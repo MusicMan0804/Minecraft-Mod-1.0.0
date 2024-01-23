@@ -8,12 +8,14 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 
 import net.minecraftforge.registries.*;
-import net.musicman.tutorialmod.Item.ModItems;
+import net.musicman.tutorialmod.item.ModItems;
 import net.musicman.tutorialmod.TutorialMod;
 
 import java.util.function.Supplier;
 
 public class ModBlocks {
+
+
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MODID);
 
     public static final RegistryObject<Block> RUBY_BLOCK = registerBlock("ruby_block",() -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
@@ -28,10 +30,10 @@ public class ModBlocks {
         registerBlockItem(name, toReturn);
         return toReturn;
     }
-    //register item to go with block
     private static <T extends Block>RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

@@ -2,5 +2,9 @@
   "item.tutorialmod.ruby": "Ruby",
   "item.tutorialmod.jade": "Jade",
   "item.tutorialmod.chalcedony": "Chalcedony",
-  "item.tutorialmod.jasper": "Jasper"
+  "item.tutorialmod.jasper": "Jasper",
+  "block.tutorialmod.ruby_block": "Block of Ruby",
+  "block.tutorialmod.jade_block": "Block of Jade",
+  "block.tutorialmod.chalcedony_block": "Block of Chalcedony",
+  "block.tutorialmod.jasper_block": "Block of Jasper"
 }

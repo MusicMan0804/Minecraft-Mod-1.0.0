@@ -1,4 +1,4 @@
-package net.musicman.tutorialmod.Item;
+package net.musicman.tutorialmod.item;
 
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
