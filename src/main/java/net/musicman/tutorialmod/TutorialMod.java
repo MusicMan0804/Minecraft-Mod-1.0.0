@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.musicman.tutorialmod.Block.ModBlocks;
 import net.musicman.tutorialmod.Item.ModItems;
 import org.slf4j.Logger;
 
@@ -59,6 +60,12 @@ public TutorialMod()
             event.accept(ModItems.JADE);
             event.accept(ModItems.CHALCEDONY);
             event.accept(ModItems.JASPER);
+        }
+        if (event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
+            event.accept(ModBlocks.RUBY_BLOCK);
+            event.accept(ModBlocks.JADE_BLOCK);
+            event.accept(ModBlocks.CHALCEDONY_BLOCK);
+            event.accept(ModBlocks.JASPER_BLOCK);
         }
     }
 
