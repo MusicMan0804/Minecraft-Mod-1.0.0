@@ -1,0 +1,11 @@
+{
+  "values": [
+    "tutorialmod:ruby_block",
+    "tutorialmod:chalcedony_block",
+    "tutorialmod:jasper_block",
+    "tutorialmod:jade_block",
+    "tutorialmod:cracked_jade_block",
+    "tutorialmod:ruby_ore",
+    "tutorialmod:chalcedony_ore"
+  ]
+}
