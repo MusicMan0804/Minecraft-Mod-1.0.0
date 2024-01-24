@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "tutorialmod:jasper"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:jasper_block"
+  }
+}

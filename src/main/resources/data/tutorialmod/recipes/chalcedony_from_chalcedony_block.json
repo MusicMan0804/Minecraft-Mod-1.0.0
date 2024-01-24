@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "tutorialmod:chalcedony_block"
+    }
+  ],
+  "result": {
+    "item": "tutorialmod:chalcedony",
+    "count": 9
+  }
+}
