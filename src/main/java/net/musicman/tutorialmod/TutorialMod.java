@@ -64,8 +64,11 @@ public TutorialMod()
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.RUBY_BLOCK);
+            event.accept(ModBlocks.RUBY_ORE);
             event.accept(ModBlocks.JADE_BLOCK);
+            event.accept(ModBlocks.CRACKED_JADE_BLOCK);
             event.accept(ModBlocks.CHALCEDONY_BLOCK);
+            event.accept(ModBlocks.CHALCEDONY_ORE);
             event.accept(ModBlocks.JASPER_BLOCK);
         }
 
